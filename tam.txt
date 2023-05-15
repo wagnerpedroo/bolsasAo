@@ -1,0 +1,2 @@
+desktop 1800px 600px
+mobile 1040 600px
