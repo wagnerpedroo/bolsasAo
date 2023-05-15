@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Arquivos CSS  -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/slider.css" />
+    <!-- Arquivos Js -->
+    <script src="./assets/Js/slide.js" defer></script>
+    <script src="assets/js/jquery-3.6.3.min.js" defer></script>
+    <script src="assets/Js/header.js" defer></script>
+    <title>Bolsas Ao</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <section class="left">
+          <div class="contacts">
+            <p>Contactos de suporto</p>
+            <p>+244 999999999</p>
+          </div>
+          <address class="address">
+            <p>Nossa localização</p>
+            <p>Angola, Luanda</p>
+          </address>
+          <div class="email">
+            <p>Contacto email</p>
+            <p>info.bolsas@gmail.com</p>
+          </div>
+        </section>
+        <section class="right">
+          <a href="login.html" rel="next" target="_self">Login</a>
+          <a href="cadastro.html" rel="next" target="_self">Cadastro</a>
+        </section>
+      </div>
+    </header>
+    <!-- Fim header -->
+
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-container">
+          <div class="logo">
+              <h1>BolsasAo</h1>
+          </div>
+          <ul>
+              <li><a href="#" rel="next" target="_parent">Home</a></li>
+              <li><a href="#noticias" rel="next" target="_parent">Notícias</a></li>
+              <li class="sub-menu">
+                  <a href="#" rel="next" target="_parent">Bolsas</a>
+                  <ul>
+                      <li><a href="#" rel="next" target="_self">Disponíveis</a></li>
+                      <li><a href="#" rel="next" target="_self">Internas</a></li>
+                      <li><a href="#" rel="next" target="_self">Externas</a></li>
+                  </ul>
+              </li>
+              <li><a href="#" rel="next" target="_parent">Sobre</a></li>
+          </ul>
+          <div class="search-box">
+              <input type="text" name="search-box" id="search-box" placeholder="Que tipo de vaga procura?">
+          </div>
+      </div>
+  </nav>
+  <!-- Fim Navbar -->
+
+    <!-- caroulsel -->
+    <section class="slider">
+      <div class="slider-content">
+        <input type="radio" name="btn-radio" id="radio1" />
+        <input type="radio" name="btn-radio" id="radio2" />
+        <input type="radio" name="btn-radio" id="radio3" />
+
+        <div class="slide-box first">
+          <img
+            class="img-desktop"
+            src="assets/images/angola-flag.jpg"
+            alt="angola-flag"
+          />
+          <img
+            class="img-mobile"
+            src="assets/images/mobile/angola-flag.jpg"
+            alt="mobile angola-flag"
+          />
+        </div>
+
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="assets/images/italia-flag-1280.jpg"
+            alt="angola-flag"
+          />
+          <img
+            class="img-mobile"
+            src="assets/images/mobile/italia-flag.jpg"
+            alt="mobile angola-flag"
+          />
+        </div>
+
+        <div class="slide-box">
+          <img
+            class="img-desktop"
+            src="assets/images/portugal-flag-1280.jpg"
+            alt="angola-flag"
+          />
+          <img
+            class="img-mobile"
+            src="assets/images/mobile/portugal-flag.jpg"
+            alt="mobile angola-flag"
+          />
+        </div>
+
+        <div class="auto-nav">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="manual-nav">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+      </div>
+    </section>
+    <!-- Fim caroulsel -->
+
+    <!-- Section notícias -->
+    <section id="noticias" class="noticias">
+      <h1>Notícias</h1>
+      
+    </section>
+  </body>
+</html>

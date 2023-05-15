@@ -1,0 +1,45 @@
+header {
+  width: 100%;
+  height: fit-content;
+  background-image: url("../images/bg_header.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div.header-container {
+  width: 63rem;
+  gap: 2rem;
+  padding: 0.3rem 0.3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+header > div.header-container > section.left {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  font-size: 13px;
+}
+
+header > div.header-container > section.left .contacts p:last-child,
+header > div.header-container > section.left .address p:last-child,
+header > div.header-container > section.left .email p:last-child {
+  font-weight: bold;
+}
+
+header > div.header-container > section.right {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+header > div.header-container > section.right a {
+  text-decoration: none;
+}

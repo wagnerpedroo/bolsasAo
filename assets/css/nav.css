@@ -1,0 +1,99 @@
+:root {
+  --color1: #060c18;
+  --color2: #de5e53;
+  --color3: #393641;
+  --color4: #d26d75;
+  --color5: #2c3447;
+}
+
+nav {
+  position: absolute;
+  top: 3rem;
+  /* background-color: salmon; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  z-index: 1;
+  transition: 250ms;
+}
+
+.bgscroll {
+  background-color: white;
+  width: 100%;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  transition: 250ms;
+}
+
+nav > .nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  width: 50rem;
+  background-color: white;
+  border-radius: 7px;
+}
+
+nav > .nav-container .logo h1 {
+  color: #2c3447;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+nav > .nav-container ul {
+  list-style-type: none;
+  display: flex;
+  column-gap: 15px;
+}
+
+nav > .nav-container ul li a {
+  color: #2c3447;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+nav > .nav-container .search-box {
+  width: auto;
+  padding: 0 1rem;
+}
+
+nav > .nav-container .search-box input {
+  color: gray;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 5px;
+}
+
+nav > .nav-container .search-box input:focus {
+  transition: 1s;
+  border: 1.5px solid rgb(255, 100, 82);
+}
+
+nav ul li.sub-menu ul {
+  display: none;
+  flex-direction: column;
+  padding: 0 10px;
+  row-gap: 7px;
+  list-style-type: none;
+  position: absolute;
+  background-color: #ffffff;
+  border-top: 1px solid var(--color2);
+  width: 10rem;
+  height: fit-content;
+  text-align: left;
+  font-weight: 500;
+}
+
+nav ul li.sub-menu:hover ul {
+  display: flex;
+}
+
+.sub-menu ul > li:hover a {
+  color: #de5e53;
+}
