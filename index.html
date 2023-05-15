@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/slider.css" />
+    <link rel="stylesheet" href="assets/css/section-noticias.css">
     <!-- Arquivos Js -->
     <script src="./assets/Js/slide.js" defer></script>
     <script src="assets/js/jquery-3.6.3.min.js" defer></script>
@@ -44,28 +45,33 @@
     <!-- Navbar -->
     <nav>
       <div class="nav-container">
-          <div class="logo">
-              <h1>BolsasAo</h1>
-          </div>
-          <ul>
-              <li><a href="#" rel="next" target="_parent">Home</a></li>
-              <li><a href="#noticias" rel="next" target="_parent">Notícias</a></li>
-              <li class="sub-menu">
-                  <a href="#" rel="next" target="_parent">Bolsas</a>
-                  <ul>
-                      <li><a href="#" rel="next" target="_self">Disponíveis</a></li>
-                      <li><a href="#" rel="next" target="_self">Internas</a></li>
-                      <li><a href="#" rel="next" target="_self">Externas</a></li>
-                  </ul>
-              </li>
-              <li><a href="#" rel="next" target="_parent">Sobre</a></li>
-          </ul>
-          <div class="search-box">
-              <input type="text" name="search-box" id="search-box" placeholder="Que tipo de vaga procura?">
-          </div>
+        <div class="logo">
+          <h1>BolsasAo</h1>
+        </div>
+        <ul>
+          <li><a href="#" rel="next" target="_parent">Home</a></li>
+          <li><a href="#noticias" rel="next" target="_parent">Notícias</a></li>
+          <li class="sub-menu">
+            <a href="#" rel="next" target="_parent">Bolsas</a>
+            <ul>
+              <li><a href="#" rel="next" target="_self">Disponíveis</a></li>
+              <li><a href="#" rel="next" target="_self">Internas</a></li>
+              <li><a href="#" rel="next" target="_self">Externas</a></li>
+            </ul>
+          </li>
+          <li><a href="#" rel="next" target="_parent">Sobre</a></li>
+        </ul>
+        <div class="search-box">
+          <input
+            type="text"
+            name="search-box"
+            id="search-box"
+            placeholder="Que tipo de vaga procura?"
+          />
+        </div>
       </div>
-  </nav>
-  <!-- Fim Navbar -->
+    </nav>
+    <!-- Fim Navbar -->
 
     <!-- caroulsel -->
     <section class="slider">
@@ -130,8 +136,10 @@
 
     <!-- Section notícias -->
     <section id="noticias" class="noticias">
-      <h1>Notícias</h1>
-      
+      <div class="header-noticias">
+        <h1>Notícias</h1>
+        <a href="noticias-gerais.html" target="_self" rel="next">Ver todas notícias</a>
+      </div>
     </section>
   </body>
 </html>
