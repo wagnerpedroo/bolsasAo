@@ -50,14 +50,14 @@ header > .header-noticias > h1 + a {
 }
 
 header > .header-noticias > h1 + a:hover {
-  background-color: #0eb582;
+  /* background-color: #0eb582; */
   transition: background-color 0.3s ease-in-out;
 }
 
 section.noticias {
   width: 100%;
   height: auto;
-  background: #566964;
+  /* background: #566964; */
   display: flex;
   justify-content: center;
   column-gap: 3rem;
@@ -67,7 +67,7 @@ section.noticias > .section-content {
   max-width: 64rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
+  gap: 1rem;
 }
 
 section.noticias > .section-content  .card {
@@ -77,6 +77,14 @@ section.noticias > .section-content  .card {
   border-radius: 5px;
   margin: 5px;
   position: relative;
+  height: auto;
+  transition: transform .5s ease-in-out;
+  box-shadow: 3px 6px 9px 1px #060c1821;
+}
+
+section.noticias > .section-content  .card:hover {
+  transform: translateY(-13px);
+  transition: transform .5s ease-in-out;
 }
 
 section.noticias > .section-content  .card > .banner {
@@ -121,9 +129,8 @@ section.noticias > .section-content > .card > .banner + p {
 section.noticias > .section-content > .card > .banner + .data-info {
   position: absolute;
   bottom: 0;
-  top: 9rem;
+  top: 11rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   column-gap: 10px;
 }
@@ -137,4 +144,83 @@ section.noticias > .section-content > .card > .banner + .data-info > img {
 section.noticias > .section-content > .card > .banner + .data-info > img + time {
   font-size: 13px;
   color: var(--color1);
+  height: fit-content;
+  height: 15px;
+}
+
+section.noticias > .section-content > .card > .banner + .data-info + .card-container {
+  /* background-color: deeppink; */
+  height: auto;
+  margin-top: 12rem;
+}
+
+section.noticias > .section-content > .card > .banner + .data-info + .card-container > .card-content {
+  position: relative;
+  /* bottom: 10rem; */
+}
+
+section.noticias > .section-content > .card > .banner + .data-info + .card-container > .card-content > p {
+  color: var(--color1);
+  font-weight: 500;
+}
+
+.card-btn {
+  color: #ff1949;
+  float: right;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+#banner2 {
+  width: 100%;
+  height: 10rem;
+  background-image: url('../images/flag-of-china.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+#banner3 {
+  width: 100%;
+  height: 10rem;
+  background-image: url('../images/flag-of-italy.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+#banner4 {
+  width: 100%;
+  height: 10rem;
+  background-image: url('../images/flag-of-angola-1.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+}
+
+#banner5 {
+  width: 100%;
+  height: 10rem;
+  background-image: url('../images/STIPENDIUM\ HUNGARICUM.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
 }

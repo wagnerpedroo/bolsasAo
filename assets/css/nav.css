@@ -24,6 +24,7 @@ nav {
   position: sticky;
   top: 0;
   transition: 500ms;
+  box-shadow: 3px 6px 9px 1px #060c1821;
 }
 
 nav > .nav-container {
