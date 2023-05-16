@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="assets/css/nav.css" />
     <link rel="stylesheet" href="assets/css/slider.css" />
     <link rel="stylesheet" href="assets/css/section-noticias.css" />
+    <link rel="stylesheet" href="assets/css/footer.css">
     <!-- Arquivos Js -->
     <script src="./assets/Js/slide.js" defer></script>
     <script src="assets/js/jquery-3.6.3.min.js" defer></script>
     <script src="assets/Js/header.js" defer></script>
+    <script src="assets/Js/scrolTop.js" defer></script>
     <title>Bolsas Ao</title>
   </head>
   <body>
@@ -284,5 +286,55 @@
         </div>
       </main>
     </section>
+    <!-- Fim Section notícias -->
+
+    <!-- Footer -->
+    <footer>
+      <section class="top">
+        <div class="top-content">
+          <div class="supporte">
+            <h2>Supporte</h2>
+            <p>Portal BolsasAo</p>
+            <p>
+              <small>+244 999999999/999999999</small>
+            </p>
+          </div>
+          <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>
+              Mantenha-se actualizado com nossas ofertas de <br />
+              bolsas.
+            </p>
+            <form action="newsletter.php" method="POST">
+              <label for="email">Teu e-mail:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="exemple@dominio.com"
+                required
+              />
+              <input type="submit" value="Subscreve" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="bottom-content">
+          <p>
+            &copy;2023 <span class="destaque">BolsasAo</span> feito por wagner |
+            All rights reserved
+          </p>
+          <button class="btn-move-top">
+            <img
+              src="assets/icons/btn-top.png"
+              width="100"
+              alt="up arrow"
+              class="btn-top"
+            />
+          </button>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
