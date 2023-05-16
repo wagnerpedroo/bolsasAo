@@ -11,10 +11,18 @@
   /* background-color: aqua; */
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
-.noticias > .header-noticias {
+header:not(header:first-child) {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+header > .header-noticias {
   width: 63rem;
   gap: 2rem;
   padding: 0.3rem 0.3rem;
@@ -25,23 +33,86 @@
   border-bottom: 1px solid var(--color1);
 }
 
-.noticias > .header-noticias > h1 {
+header > .header-noticias > h1 {
   color: var(--color1);
   font-size: 2.3125em;
   text-transform: uppercase;
 }
 
-.noticias > .header-noticias > h1 + a {
-    color: white;
-    background-color: #ff1949;
-    padding: 10px;
-    font-size: 1em;
-    /* font-weight: bold; */
-    text-decoration: none;
-    transition: background-color .3s ease-in-out;
+header > .header-noticias > h1 + a {
+  color: white;
+  background-color: #ff1949;
+  padding: 10px;
+  font-size: 1em;
+  /* font-weight: bold; */
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.noticias > .header-noticias > h1 + a:hover {
-    background-color: #0eb582;
-    transition: background-color .3s ease-in-out;
+header > .header-noticias > h1 + a:hover {
+  background-color: #0eb582;
+  transition: background-color 0.3s ease-in-out;
+}
+
+section.noticias {
+  width: 100%;
+  height: auto;
+  background: #566964;
+  display: flex;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+section.noticias > .section-content {
+  max-width: 64rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+}
+
+section.noticias > .section-content  .card {
+  background-color: #060c18;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin: 5px;
+  position: relative;
+}
+
+section.noticias > .section-content  .card > .banner {
+  width: 100%;
+  height: 10rem;
+  background-image: url('../images/Flag_of_Angola.svg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px;
+} 
+
+/* section.noticias > .section-content  .card > .banner > .info-container {
+  
+} */
+
+section.noticias > .section-content  .card > .banner > .info-container > .info-content {
+  position: absolute;
+  bottom: 0;
+  background-color: white;
+  width: 90%;
+  padding: 4px;
+  border-radius: 5px 5px 0 0;
+  cursor: default;
+}
+
+section.noticias > .section-content  .card > .banner > .info-container > .info-content > p {
+  color: #060c18;
+  font-size: 12px;  
+}
+
+section.noticias > .section-content  .card > .banner + p {
+  position: relative;
+  bottom: 0;
+  z-index: 2;
 }
