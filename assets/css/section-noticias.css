@@ -96,7 +96,7 @@ section.noticias > .section-content  .card > .banner {
   
 } */
 
-section.noticias > .section-content  .card > .banner > .info-container > .info-content {
+section.noticias > .section-content > .card > .banner > .info-container > .info-content {
   position: absolute;
   bottom: 0;
   background-color: white;
@@ -106,13 +106,28 @@ section.noticias > .section-content  .card > .banner > .info-container > .info-c
   cursor: default;
 }
 
-section.noticias > .section-content  .card > .banner > .info-container > .info-content > p {
-  color: #060c18;
+section.noticias > .section-content > .card > .banner > .info-container > .info-content > p {
+  color: var(--color2);
   font-size: 12px;  
+  font-weight: 500;
 }
 
-section.noticias > .section-content  .card > .banner + p {
+section.noticias > .section-content > .card > .banner + p {
   position: relative;
   bottom: 0;
   z-index: 2;
+}
+
+section.noticias > .section-content > .card > .banner + .data-info {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+section.noticias > .section-content > .card > .banner + .data-info > img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
