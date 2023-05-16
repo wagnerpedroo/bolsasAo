@@ -15,7 +15,6 @@ nav {
   justify-content: center;
   height: auto;
   z-index: 1;
-  transition: 250ms;
 }
 
 .bgscroll {
@@ -24,7 +23,7 @@ nav {
   padding: 10px;
   position: sticky;
   top: 0;
-  transition: 250ms;
+  transition: 500ms;
 }
 
 nav > .nav-container {
