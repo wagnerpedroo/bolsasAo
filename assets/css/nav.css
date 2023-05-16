@@ -97,3 +97,82 @@ nav ul li.sub-menu:hover ul {
 .sub-menu ul > li:hover a {
   color: #de5e53;
 }
+
+.menu {
+  cursor: pointer;
+  user-select: none;
+}
+
+.menuShow {
+  position: absolute;
+  top: 0;
+  left: 0 !important;
+  transition: left 1s ease-in-out;
+}
+
+.slideLi {
+  transform: translateX(0);
+  transition: left 1s ease;
+  animation-name: slideLi;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideLi {
+  from {
+    transform: translateX(-30rem);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 710px) {
+  nav {
+    height: 5rem;
+  }
+
+  nav > .nav-container .logo h1 {
+    color: #ffffff;
+  }
+
+  nav > .nav-container,
+  .bgscroll {
+    background-color: #ff1949;
+  }
+  nav > .nav-container .search-box {
+    display: none;
+  }
+  nav > .nav-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    row-gap: 5rem;
+    width: 50%;
+    float: left;
+    position: absolute;
+    top: 0;
+    left: -30rem;
+    height: 100vh;
+    background-color: #ffffff;
+    transition: left 1s ease;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
+  }
+
+  nav > .nav-container ul li {
+    transform: translateX(-30rem);
+  }
+
+  nav > .nav-container ul li a {
+    color: #de5e53;
+    font-size: 1.2em;
+  }
+
+  nav ul li.sub-menu {
+    display: none;
+  }
+}
