@@ -71,7 +71,7 @@ section.noticias > .section-content {
 }
 
 section.noticias > .section-content  .card {
-  background-color: #060c18;
+  background-color: #ffffff;
   color: white;
   padding: 1rem;
   border-radius: 5px;
@@ -99,7 +99,7 @@ section.noticias > .section-content  .card > .banner {
 section.noticias > .section-content > .card > .banner > .info-container > .info-content {
   position: absolute;
   bottom: 0;
-  background-color: white;
+  background-color: var(--color1);
   width: 90%;
   padding: 4px;
   border-radius: 5px 5px 0 0;
@@ -107,7 +107,7 @@ section.noticias > .section-content > .card > .banner > .info-container > .info-
 }
 
 section.noticias > .section-content > .card > .banner > .info-container > .info-content > p {
-  color: var(--color2);
+  color: #ffff;
   font-size: 12px;  
   font-weight: 500;
 }
@@ -121,13 +121,20 @@ section.noticias > .section-content > .card > .banner + p {
 section.noticias > .section-content > .card > .banner + .data-info {
   position: absolute;
   bottom: 0;
+  top: 9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  column-gap: 10px;
 }
 
 section.noticias > .section-content > .card > .banner + .data-info > img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
+}
+
+section.noticias > .section-content > .card > .banner + .data-info > img + time {
+  font-size: 13px;
+  color: var(--color1);
 }
