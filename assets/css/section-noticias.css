@@ -271,3 +271,26 @@ menu {
     margin: 3rem;
   }
 }
+
+@media screen and (max-width: 646px) {
+  section.noticias > .section-content {
+    max-width: 64rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin: 3rem;
+  }
+
+  section.noticias > .section-content  .card {
+    background-color: #ffffff;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    width: 25rem;
+    height: auto;
+    transition: transform .5s ease-in-out;
+    box-shadow: 3px 6px 9px 1px #060c1821;
+  }
+}

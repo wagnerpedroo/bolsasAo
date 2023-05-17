@@ -43,3 +43,19 @@ header > div.header-container > section.right {
 header > div.header-container > section.right a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 646px) {
+  header > div.header-container {
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+  }
+
+  header > div.header-container section.left {
+    display: none;
+  }
+
+  header > div.header-container section.left {
+    display: none;
+  }
+}
