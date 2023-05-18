@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wagner Pedro" />
+    <!-- Arquivos CSS  -->
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/nav.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/login-banner.css" />
+    <link rel="stylesheet" href="assets/css/login-form-section.css" />
+    <!-- Arquivos Js -->
+    <script src="./assets/Js/slide.js" defer></script>
+    <script src="assets/js/jquery-3.6.3.min.js" defer></script>
+    <script src="assets/Js/header.js" defer></script>
+    <script src="assets/Js/scrolTop.js" defer></script>
+    <script src="assets/Js/menu.js" defer></script>
+    <title>Bolsas Ao</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <section class="left">
+          <div class="contacts">
+            <p>Contactos de suporto</p>
+            <p>+244 999999999</p>
+          </div>
+          <address class="address">
+            <p>Nossa localização</p>
+            <p>Angola, Luanda</p>
+          </address>
+          <div class="email">
+            <p>Contacto email</p>
+            <p>info.bolsas@gmail.com</p>
+          </div>
+        </section>
+        <section class="right">
+          <a href="login.html" rel="next" target="_self">Login</a>
+          <a href="cadastro.html" rel="next" target="_self">Cadastro</a>
+        </section>
+      </div>
+    </header>
+    <!-- Fim header -->
+
+    <!-- Navbar -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <h1>BolsasAo</h1>
+        </div>
+        <ul class="">
+          <li><a href="./index.html" rel="prev" target="_self">Home</a></li>
+          <li>
+            <a href="./index.html/#noticias" rel="prev" target="_self"
+              >Notícias</a
+            >
+          </li>
+          <li class="sub-menu">
+            <a href="#" rel="next" target="_self">Bolsas</a>
+            <ul>
+              <li><a href="#" rel="next" target="_self">Disponíveis</a></li>
+              <li><a href="#" rel="next" target="_self">Internas</a></li>
+              <li><a href="#" rel="next" target="_self">Externas</a></li>
+            </ul>
+          </li>
+          <li><a href="#" rel="next" target="_self">Sobre</a></li>
+        </ul>
+        <div class="search-box">
+          <input
+            type="text"
+            name="search-box"
+            id="search-box"
+            placeholder="Que tipo de vaga procura?"
+          />
+        </div>
+        <div class="menu">
+          <img src="assets/icons/icon.png" alt="menu" />
+        </div>
+      </div>
+    </nav>
+    <!-- Fim Navbar -->
+
+    <!-- Section  -->
+    <section class="banner">
+      <div class="slider-content">
+        <div class="slide-box first">
+          <img
+            class="img-desktop"
+            src="assets/images/students.jpg"
+            alt="college estudents"
+          />
+          <img
+            class="img-mobile"
+            src="assets/images/students-mobile.jpg"
+            alt="college estudents"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Fim Section  -->
+
+    <!-- form section -->
+    <main class="form">
+        <h1>Efectuar Login</h1>
+        <form action="formhandle.php" method="post">
+            <label for="email">Email</label>
+            <input type="email" name="emailtxt" id="emailtxt" placeholder="exemplo@gmail.com" autofocus autocomplete="email" required>
+            <input type="password" name="senhatxt" id="senhatxt"  minlength="8" autocomplete="current-password" required>
+        </form>
+    </main>
+    <!-- Fim form section -->
+
+    <!-- Footer -->
+    <footer>
+      <section class="top">
+        <div class="top-content">
+          <div class="supporte">
+            <h2>Supporte</h2>
+            <p>Portal BolsasAo</p>
+            <p>
+              <small>+244 999999999/999999999</small>
+            </p>
+          </div>
+          <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>
+              Mantenha-se actualizado com nossas ofertas de <br />
+              bolsas.
+            </p>
+            <form action="newsletter.php" method="POST">
+              <label for="email">Teu e-mail:</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="exemple@dominio.com"
+                required
+              />
+              <input type="submit" value="Subscreve" />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="bottom">
+        <div class="bottom-content">
+          <p>
+            &copy;2023 <span class="destaque">BolsasAo</span> feito por wagner |
+            All rights reserved
+          </p>
+          <button class="btn-move-top">
+            <img
+              src="assets/icons/btn-top.png"
+              width="100"
+              alt="up arrow"
+              class="btn-top"
+            />
+          </button>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
