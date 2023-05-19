@@ -1,0 +1,78 @@
+:root {
+  --color1: #060c18;
+  --color2: #de5e53;
+  --color3: #393641;
+  --color4: #d26d75;
+  --color5: #2c3447;
+}
+
+section#form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  padding: 8rem 0 20rem 0;
+  height: 420.703px;
+  /* background-color: rgb(64, 255, 143); */
+}
+
+section#form > h1 {
+  font-size: 2em;
+  color: var(--color1);
+}
+
+section#form > h1 + form {
+  width: 30rem;
+  /* background-color: #23262c; */
+  padding: 2rem;
+}
+
+section#form > h1 + form label[for="emailtxt"], section#form > h1 + form label[for="senhatxt"] {
+  font-size: .8em;
+  color: var(--color1);
+  font-weight: bolder;
+}
+
+section#form > h1 + form > label[for="emailtxt"]::after, section#form > h1 + form > label[for="senhatxt"]::after {
+  content: ' *';
+  color: red;
+}
+
+section#form > form > input[type="email"], form > input[type="password"] {
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 11px 2px rgba(0, 0, 0, 0.185);
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--color1);
+  transition: border .2s ease-in;
+}
+
+section#form > h1  + form > label + br + input[type="email"]:focus, 
+section#form > h1  + form > label + br + input[type="email"] + label + input[type="password"]:focus {
+  transition: border .2s ease-in;
+  border: 1px solid var(--color4);
+}
+
+section#form > h1  + form > label + br + input[type="email"] + label + input[type="password"] + input[type="submit"] {
+  width: 100%;
+  background-color: #ff1949;
+  padding: 13px 20px;
+  border-radius: 5px;;
+  outline: none;
+  border: none;
+  color: white;
+  font: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+section#form > h1  + form > label + br + input[type="email"] + label + input[type="password"] + input[type="submit"]:hover {
+  background-color: aqua;
+    transition: background-color 0.3s;
+}
+/* form >  */
