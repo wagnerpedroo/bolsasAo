@@ -1,0 +1,3 @@
+adicionar espacaçamento no formulário de login
+fazer a responsividade do footer na versão mobile
+fazer formulário de cadastro
