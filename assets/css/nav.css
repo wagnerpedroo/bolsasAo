@@ -6,7 +6,7 @@
   --color5: #2c3447;
 }
 
-nav {
+.nav {
   position: absolute;
   top: 3rem;
   /* background-color: salmon; */
@@ -27,7 +27,7 @@ nav {
   box-shadow: 3px 6px 9px 1px #060c1821;
 }
 
-nav > .nav-container {
+.nav__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -37,19 +37,19 @@ nav > .nav-container {
   border-radius: 7px;
 }
 
-nav > .nav-container .logo h1 {
+.nav__container__logo h1 {
   color: #2c3447;
   font-weight: 500;
   cursor: pointer;
 }
 
-nav > .nav-container ul {
+.nav__container__ul {
   list-style-type: none;
   display: flex;
   column-gap: 15px;
 }
 
-nav > .nav-container ul li a {
+.nav__container__ul li a {
   color: #2c3447;
   text-transform: capitalize;
   font-weight: 500;
@@ -57,12 +57,12 @@ nav > .nav-container ul li a {
   font-size: 1em;
 }
 
-nav > .nav-container .search-box {
+.nav__container__search-box {
   width: auto;
   padding: 0 1rem;
 }
 
-nav > .nav-container .search-box input {
+.nav__container__search-box > input {
   color: gray;
   outline: none;
   border: none;
@@ -70,12 +70,12 @@ nav > .nav-container .search-box input {
   padding: 5px 5px;
 }
 
-nav > .nav-container .search-box input:focus {
+.nav__container__search-box > input:focus {
   transition: 1s;
   border: 1.5px solid rgb(255, 100, 82);
 }
 
-nav ul li.sub-menu ul {
+.nav__container__ul__sub-menu ul {
   display: none;
   flex-direction: column;
   padding: 0 10px;
@@ -90,11 +90,11 @@ nav ul li.sub-menu ul {
   font-weight: 500;
 }
 
-nav ul li.sub-menu:hover ul {
+.nav__container__ul__sub-menu:hover ul {
   display: flex;
 }
 
-.sub-menu ul > li:hover a {
+.nav__container__ul__sub-menu ul li:hover a {
   color: #de5e53;
 }
 
@@ -103,7 +103,7 @@ nav ul li.sub-menu:hover ul {
   user-select: none;
 }
 
-.menuShow {
+.nav__container__ul--menushow {
   position: absolute;
   top: 0;
   left: 0 !important;
@@ -131,22 +131,22 @@ nav ul li.sub-menu:hover ul {
 }
 
 @media screen and (max-width: 710px) {
-  nav {
+  .nav {
     height: 5rem;
   }
 
-  nav > .nav-container .logo h1 {
+  .nav > .nav__container .nav__container__logo h1 {
     color: #ffffff;
   }
 
-  nav > .nav-container,
+  .nav > .nav__container,
   .bgscroll {
     background-color: #ff1949;
   }
-  nav > .nav-container .search-box {
+  .nav > .nav__container .nav__container__search-box {
     display: none;
   }
-  nav > .nav-container ul {
+  .nav > .nav__container ul {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,16 +163,16 @@ nav ul li.sub-menu:hover ul {
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.322);
   }
 
-  nav > .nav-container ul li {
+  .nav__container ul li {
     transform: translateX(-30rem);
   }
 
-  nav > .nav-container ul li a {
+  .nav__container ul li a {
     color: #de5e53;
     font-size: 1.2em;
   }
 
-  nav ul li.sub-menu {
+  .nav__container__ul__sub-menu {
     display: none;
   }
 }
