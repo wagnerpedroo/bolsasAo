@@ -1,4 +1,4 @@
-header:not(header.no-inheritance) {
+.header:not(header.no-inheritance) {
   width: 100%;
   height: fit-content;
   background-image: url("../images/bg_header.png");
@@ -10,7 +10,7 @@ header:not(header.no-inheritance) {
   align-items: center;
 }
 
-header > div.header-container {
+.header__div {
   width: 63rem;
   gap: 2rem;
   padding: 0.3rem 0.3rem;
@@ -20,7 +20,7 @@ header > div.header-container {
   cursor: default;
 }
 
-header > div.header-container > section.left {
+.header__div__sectionLeft {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -28,34 +28,37 @@ header > div.header-container > section.left {
   font-size: 13px;
 }
 
-header > div.header-container > section.left .contacts p:last-child,
-header > div.header-container > section.left .address p:last-child,
-header > div.header-container > section.left .email p:last-child {
+.header__div__sectionLeft__contacts p:last-child,
+.header__div__sectionLeft__address p:last-child,
+.header__div__sectionLeft__addressEmail p:last-child {
   font-weight: bold;
 }
 
-header > div.header-container > section.right {
+.header__div__sectionRight {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-header > div.header-container > section.right a {
+.header__div__sectionRight a {
   text-decoration: none;
 }
 
 @media screen and (max-width: 646px) {
-  header > div.header-container {
+  
+  .header__div {
     display: flex;
     justify-content: center;
     height: 4rem;
   }
 
-  header > div.header-container section.left {
+  
+  .header__div__sectionLeft {
     display: none;
   }
 
-  header > div.header-container section.left {
+  
+  .header__div .header__div__sectionLeft {
     display: none;
   }
 }
