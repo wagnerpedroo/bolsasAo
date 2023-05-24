@@ -1,6 +1,7 @@
 "use strict"
 
-const radio = document.querySelector('.manual-btn')
+const radio = document.querySelector('.manual-nav__manual-btn')
+
 let counter = 1
 
 document.getElementById('radio1').checked = true

@@ -37,7 +37,7 @@
     justify-content: center;
 }
 
-.manual-nav .manual-btn, .auto-nav  div {
+.manual-nav__manual-btn, .auto-nav  div {
     border: 1px solid #ff1949;
     padding: 4px;
     border-radius: 50%;
@@ -45,11 +45,11 @@
     transition: .3s;
 }
 
-.manual-nav .manual-btn:not(:last-child), .auto-nav div:not(:last-child) {
+.manual-nav__manual-btn:not(:last-child), .auto-nav div:not(:last-child) {
     margin-right: 10px;
 }
 
-.manual-nav .manual-btn:hover {
+.manual-nav__manual-btn:hover {
     background-color: #ff1949;
 }
 
