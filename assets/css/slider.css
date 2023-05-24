@@ -37,7 +37,8 @@
     justify-content: center;
 }
 
-.manual-nav__manual-btn, .auto-nav  div {
+.manual-nav__manual-btn, 
+.auto-nav  div {
     border: 1px solid #ff1949;
     padding: 4px;
     border-radius: 50%;
@@ -45,7 +46,8 @@
     transition: .3s;
 }
 
-.manual-nav__manual-btn:not(:last-child), .auto-nav div:not(:last-child) {
+.manual-nav__manual-btn:not(:last-child), 
+.auto-nav div:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -53,7 +55,9 @@
     background-color: #ff1949;
 }
 
-#radio1:checked ~ .auto-nav .auto-btn1, #radio2:checked ~ .auto-nav .auto-btn2, #radio3:checked ~ .auto-nav .auto-btn3 {
+#radio1:checked ~ .auto-nav .auto-btn1, 
+#radio2:checked ~ .auto-nav .auto-btn2, 
+#radio3:checked ~ .auto-nav .auto-btn3 {
     background-color: #ff1949;
 }
 
