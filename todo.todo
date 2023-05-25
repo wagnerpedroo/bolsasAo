@@ -1,7 +1,10 @@
-✔ Adicionar arquitectura BEM nas css do projecto @done(23-05-22 23:27)
-✔ adicionar espacaçamento no formulário de login @done(23-05-22 23:29)
-✔ adicionar BEM no index na parte do css do slider @started(23-05-23 20:55) @done(23-05-23 23:22) @lasted(2h27m36s)
-    ✔ modificar os nomes das classes nos arquivos de js @done(23-05-23 23:23)
-☐ fazer formulário de cadastro já com Arquitectura BEM
-☐ Adicionar BEM na section notícias
-☐ Adicionar BEM no footer @started(23-05-25 12:13)
+☐ Fazer backend
+    ☐ Criar os arquivos php ect
+    ☐ Criar Banco de dados
+    ☐ Conseguir cadastrar usuários no sistema
+    ☐ Conseguir logar usuários no sistema
+    ☐ Criar API das bolsas
+    ☐ Integrar API no sistema
+    ☐ Laravel
+        ☐ projecto voltado para o laravel
+        ☐ Criação de rotas e oo que for necessário
