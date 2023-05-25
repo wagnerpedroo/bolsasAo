@@ -98,7 +98,7 @@
     </nav>
     <!-- Fim Navbar -->
 
-    <!-- Section  -->
+    <!-- banner Section  -->
     <section class="banner">
       <div class="slider-content">
         <div class="slide-box first">
@@ -118,11 +118,11 @@
     <!-- Fim Section  -->
 
     <!-- form section -->
-    <section id="form">
+    <section id="form-section">
       <h1>Criar uma conta</h1>
 
-      <form action="formhandle.php" method="post">
-        <label for="emailtxt">Email</label><br />
+      <form action="formhandle.php" method="post" class="form">
+        <label for="emailtxt" class="form__label">Email</label><br />
 
         <input
           type="email"
@@ -131,22 +131,10 @@
           placeholder="exemplo@gmail.com"
           autofocus
           autocomplete="email"
-          required
+          required class="form__input"
         />
 
-        <label for="senhatxt">Telefone</label>
-
-        <input
-          type="number"
-          name="numerotxt"
-          id="numerotxt"
-          minlength="8"
-          autocomplete="cc-number"
-          placeholder="número de telefone actualizado"
-          required
-        />
-
-        <label for="senhatxt">Palavra Passe</label>
+        <label for="senhatxt" class="form__label">Palavra Passe</label>
 
         <input
           type="password"
@@ -155,18 +143,24 @@
           minlength="8"
           autocomplete="current-password"
           placeholder="mínimo 8 caracteres"
-          required
+          required class="form__input"
         />
 
-        <input type="submit" value="Login" />
+        <label for="senhatxt" class="form__label">Telefone</label>
 
-        <div class="aditional-link">
-          <a href="recuperar-senha.html" rel="next" target="_blank"
-            >Esqueceu a senha</a
-          >
-          <a href="criar-conta.html" rel="next" target="_blank">Criar conta</a>
-        </div>
-        <div class="links">
+        <input
+          type="number"
+          name="numerotxt"
+          id="numerotxt"
+          minlength="8"
+          autocomplete="cc-number"
+          placeholder="número de telefone actualizado"
+          required class="form__input"
+        />
+
+        <input type="submit" value="Login" class="form__submit-buttom" />
+
+        <div class="form__links">
           <a
             href="recuperar-senha.php"
             rel="next"
@@ -204,13 +198,13 @@
               bolsas.
             </p>
             <form action="newsletter.php" method="POST">
-              <label for="email">Teu e-mail:</label>
+              <label for="email">Email</label>
               <input
                 type="email"
                 name="email"
                 id="email"
                 placeholder="exemple@dominio.com"
-                required
+                required class="form__input"
               />
               <input type="submit" value="Subscreve" />
             </form>
