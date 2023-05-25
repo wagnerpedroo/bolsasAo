@@ -4,6 +4,7 @@
   --color3: #393641;
   --color4: #d26d75;
   --color5: #2c3447;
+  --color6: #ff1949;
 }
 
 section#form {
@@ -76,3 +77,32 @@ section#form > h1  + form > label + br + input[type="email"] + label + input[typ
     transition: background-color 0.3s;
 }
 
+.links {
+  /* background-color: #2c3447; */
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  row-gap: .8rem;
+}
+
+.links__first,
+.links__second {
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.links__first {
+  color: var(--color6);
+  transition: color .8s ease;
+}
+
+.links--state-hover:hover {
+  color: rgba(0, 255, 255, 0.815);
+  transition: color .8s ease;
+}
+
+.links__second {
+  color: var(--color3);
+}
