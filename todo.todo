@@ -1,7 +1,7 @@
 ☐ Fazer backend
-    ☐ Criar os arquivos php ect
-    ☐ Criar Banco de dados
-    ☐ Conseguir cadastrar usuários no sistema
+    ✔ Criar os arquivos php etc @done(23-05-29 11:46)
+    ✔ Criar Banco de dados @done(23-05-29 14:40)
+    ✔ Conseguir cadastrar usuários no sistema @done(23-05-29 14:40)
     ☐ Conseguir logar usuários no sistema
     ☐ Criar API das bolsas
     ☐ Integrar API no sistema

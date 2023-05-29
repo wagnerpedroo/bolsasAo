@@ -43,8 +43,8 @@
         </section>
 
         <section class="header__div__sectionRight">
-          <a href="login.html" rel="next" target="_self">Login</a>
-          <a href="cadastro.html" rel="next" target="_self">Cadastro</a>
+          <a href="login.php" rel="next" target="_self">Login</a>
+          <a href="cadastro.php" rel="next" target="_self">Cadastro</a>
         </section>
       </div>
     </header>
@@ -121,7 +121,7 @@
     <section id="form-section">
       <h1>Efectuar Login</h1>
 
-      <form action="formhandle.php" method="post" class="form">
+      <form action="processa.php" method="post" class="form">
         <label for="emailtxt" class="form__label">Email</label><br />
 
         <input

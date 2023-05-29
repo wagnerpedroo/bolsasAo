@@ -43,8 +43,8 @@
         </section>
 
         <section class="header__div__sectionRight">
-          <a href="login.html" rel="next" target="_self">Login</a>
-          <a href="cadastro.html" rel="next" target="_self">Cadastro</a>
+          <a href="login.php" rel="next" target="_self">Login</a>
+          <a href="cadastro.php" rel="next" target="_self">Cadastro</a>
         </section>
       </div>
     </header>
@@ -158,7 +158,7 @@
           required class="form__input"
         />
 
-        <input type="submit" value="Login" class="form__submit-buttom" />
+        <input type="submit" value="cadastrar" name="submit" class="form__submit-buttom" />
 
         <div class="form__links">
           <a

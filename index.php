@@ -47,8 +47,8 @@
         </section>
 
         <section class="header__div__sectionRight">
-          <a href="login.html" rel="next" target="_self">Login</a>
-          <a href="cadastro.html" rel="next" target="_self">Cadastro</a>
+          <a href="login.php" rel="next" target="_self">Login</a>
+          <a href="cadastro.php" rel="next" target="_self">Cadastro</a>
         </section>
 
       </div>
@@ -67,7 +67,7 @@
 
         <ul class="nav__container__ul">
           <li>
-            <a href="./index.html" rel="next" target="_parent">Home</a>
+            <a href="./index.php" rel="next" target="_parent">Home</a>
           </li>
           <li>
             <a href="#noticias" rel="next" target="_parent">Notícias</a>
@@ -173,7 +173,7 @@
     <header class="no-inheritance" id="noticias">
       <div class="header-noticias">
         <h1>Notícias</h1>
-        <a href="noticias-gerais.html" target="_self" rel="next"
+        <a href="noticias-gerais.php" target="_self" rel="next"
           >Ver todas notícias</a
         >
       </div>
